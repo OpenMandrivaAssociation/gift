@@ -4,7 +4,7 @@
 %define libname %mklibname %{name} %{major}
 %define devname %mklibname %{name} -d
 %define version 0.11.8.1
-%define rel	3
+%define rel	4
 
 Summary:        Internet File Transfer
 Name:           %{name}
