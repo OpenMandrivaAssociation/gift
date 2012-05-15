@@ -4,12 +4,12 @@
 %define libname %mklibname %{name} %{major}
 %define devname %mklibname %{name} -d
 %define version 0.11.8.1
-%define rel	4
+%define rel	5
 
 Summary:        Internet File Transfer
 Name:           %{name}
 Version:        %{version}
-Release:        %mkrel %{rel}
+Release:        %{rel}
 License:        GPL
 Group:          Networking/File transfer
 URL:            http://gift.sf.net/
@@ -17,9 +17,9 @@ Source0:        %{name}-%{version}.tar.bz2
 Patch0:		gift-0.11.8.1-gcc4.patch
 Patch1:		gift-sformatfix.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
-BuildRequires:	libltdl-devel
-BuildRequires:	libmagick-devel
-BuildRequires:	libmagic-devel
+BuildRequires:	libtool-devel
+BuildRequires:	imagemagick-devel
+BuildRequires:	magic-devel
 BuildRequires:	libvorbis-devel
 
 %description
@@ -81,6 +81,5 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_includedir}/*
 %{_libdir}/*.so
-%{_libdir}/*.*a
 %{_libdir}/pkgconfig/*
 
