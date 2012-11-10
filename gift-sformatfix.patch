@@ -1,0 +1,21 @@
+diff -urN gift-0.11.8.1/src/giftd.c gift-0.11.8.1-patched/src/giftd.c
+--- gift-0.11.8.1/src/giftd.c	2004-11-12 12:52:16.000000000 +1000
++++ gift-0.11.8.1-patched/src/giftd.c	2011-08-12 02:16:16.962304786 +1100
+@@ -174,7 +174,7 @@
+ static void message (char *str)
+ {
+ #ifndef _WINDOWS
+-	fprintf (stdout, str);
++	fprintf (stdout, "%s", str);
+ #else
+ 	MessageBox (0, str, "giFT", MB_OK | MB_ICONINFORMATION);
+ #endif
+@@ -183,7 +183,7 @@
+ static void error (char *str)
+ {
+ #ifndef _WINDOWS
+-	fprintf (stderr, str);
++	fprintf (stderr, "%s", str);
+ #else
+ 	MessageBox (0, str, "giFT Error", MB_OK | MB_ICONERROR);
+ #endif
