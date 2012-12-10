@@ -83,3 +83,14 @@ rm -rf %{buildroot}
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
 
+
+
+%changelog
+* Tue May 15 2012 Crispin Boylan <crisb@mandriva.org> 0.11.8.1-5
++ Revision: 799066
+- Rebuild
+
+* Thu Aug 11 2011 Andrey Bondrov <abondrov@mandriva.org> 0.11.8.1-4
++ Revision: 693991
+- imported package gift
+
