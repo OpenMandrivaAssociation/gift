@@ -12,7 +12,7 @@ Version:        %{version}
 Release:        %{rel}
 License:        GPL
 Group:          Networking/File transfer
-URL:            http://gift.sf.net/
+URL:            https://gift.sf.net/
 Source0:        %{name}-%{version}.tar.bz2
 Patch0:		gift-0.11.8.1-gcc4.patch
 Patch1:		gift-sformatfix.patch
