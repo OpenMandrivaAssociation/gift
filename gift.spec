@@ -17,6 +17,11 @@ Source0:        %{name}-%{version}.tar.bz2
 Patch0:		gift-0.11.8.1-gcc4.patch
 Patch1:		gift-sformatfix.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libtool-devel
 BuildRequires:	imagemagick-devel
 BuildRequires:	magic-devel
